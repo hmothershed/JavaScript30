@@ -199,3 +199,12 @@ body {
   height: 28px;
   background: var(--pale-pink);
 }
+.end-note{
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--pixel);
+}
