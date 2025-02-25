@@ -1,1 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pixelify+Sans:wght@400..700&display=swap');
 
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+:root{
+  /* colors */
+  --bg-color: #f8f7f3;
+  --white: #ffffff;
+  --black: #000000;
+  --pale-pink: #fde8ef;
+  --pink: #fec5e9;
+  --pale-yellow: #efeba4;
+  --golden-yellow: #ffc000;
+  --gray-black: #1e1e1e;
+  --pale-gray: #d9d9d9;
+  --marian-blue: #E1EBEE;
+  --periwinkle: #CCCCFF;
+  
+  /* fonts */
+  --cherry: "Cherry Bomb One";
+  --pixel: "Pixelify Sans";
+}
+
+body {
+  background: var(--bg-color);
+}
+
+.title-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.ovals{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oval-1, .oval-2 {
+  width: 43.16rem;
+  height: 10.28rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px solid var(--periwinkle);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oval-1{
+  transform: rotate(-8deg);
+}
+.oval-2{
+  transform: rotate(6deg);
+}
+.header-title{
+  font-family: var(--cherry);
+  color: var(--golden-yellow);
+  text-align: center;
+  font-size: 6rem;
+  line-height: normal;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
+
+.header-desc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59rem;
+  height: 8rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  background: var(--marian-blue);
+  font-family: var(--pixel);
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* challenges */
+.challenges{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: var(--pixel);
+}
+.challenge{
+  position: relative;
+  width: 20.125rem;
+  height: 23.625rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+  background: var(--pale-pink);
+  margin-top: 1.5rem;
+}
+.challenge-day{
+  position: absolute;
+  width: 20.125rem;
+  top: -2px;
+  left: -2px;
+  background: var(--pink);
+  height: 3.125rem;
+  color: var(--gray-black);
+  text-align: left;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.challenge-text{
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.challenge-img{
+  width: 18.125rem;
+  height: 13.125rem;
+  display: block;
+  margin-top: auto;
+  background: black;
+}
+.challenge-title{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--gray-black);
+}
+.challenge-links{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+.challenge-link {
+  flex: 1;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--gray-black);
+  border: 2px solid black;
+  width: 6rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+.demo-link{
+  background: var(--periwinkle);
+  text-decoration: none;
+}
+.repo-link{
+  background: var(--marian-blue);
+  text-decoration: none;
+}
+.demo-link:hover, .repo-link:hover{
+  transform: translate(-4px, -4px);
+  box-shadow: 2px 4px black;
+}
+.title-btn {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 8px;
+  transform: translatey(-50%);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.btn1, .btn2, .btn3{
+  width: 28px;
+  height: 28px;
+  background: var(--pale-pink);
+}
