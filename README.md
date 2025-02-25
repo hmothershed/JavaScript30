@@ -6,7 +6,7 @@
 ### Challenge list
 | No | Title | REPOSITORY | DEMO |
 | :---: | ---- | :-------: | :-------: |
-| 01 | JavaScript Drum Kit | [README]() | [DEMO]() |
+| 01 | JavaScript Drum Kit | [README](https://github.com/hmothershed/JavaScript30/blob/main/01-Drum-Kit/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/01-Drum-Kit/) |
 | 02 | CSS + JS Clock | [README]() | [DEMO]() |
 | 03 | Playing with CSS Variables and JS | [README]() | [DEMO]() |
 | 04 | Array Cardio Day 1 | [README]() | [DEMO]() |

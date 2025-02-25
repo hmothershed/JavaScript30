@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 .ovals{
@@ -37,6 +38,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+  width: 100%;
 }
 .oval-1, .oval-2 {
   width: 43.16rem;
@@ -48,6 +51,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.star{
+    position: absolute;
+    width: 40px;
+    height: auto;
+    z-index: 3;
+}
+.star-1{
+    top: 20%;
+    left: 0%;
+}
+.star-2 {
+    top: 54%;
+    right: -0.5%;
 }
 .oval-1{
   transform: rotate(-8deg);
