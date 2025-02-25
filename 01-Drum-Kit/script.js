@@ -18,7 +18,15 @@ function removeTransition(e){
     this.classList.remove('playing');
 }
 
+function handleKeyRelease(e) {
+  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+  if(key) {
+    key.classList.remove('playing');
+  }
+}
+
 const keys = document.querySelectorAll('.key');
 keys.forEach (key => key.addEventListener('transitioned', removeTransition));
 
 window.addEventListener('keydown', playSound);
+window.addEventListener('keyup', handleKeyRelease);
