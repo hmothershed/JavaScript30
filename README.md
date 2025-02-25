@@ -1,5 +1,5 @@
 # JavaScript30
-![](./Javascript30_cover.jpg)
+![](Javascript30_cover.jpg)
 
 [JavaScript30](https://javascript30.com/) is a free course created by [Wes Bos](https://github.com/wesbos) where you can practive Vanila JS Coding Challenges in 30 days with no frameworks, no compilers, no libraries, and no boilerplate
 

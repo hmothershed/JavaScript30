@@ -127,10 +127,11 @@ body {
 }
 .challenge-img{
   width: 18.125rem;
-  height: 13.125rem;
+  height: 11.125rem;
   display: block;
   margin-top: auto;
   background: black;
+  object-fit: cover;
 }
 .challenge-title{
   font-size: 1.5rem;

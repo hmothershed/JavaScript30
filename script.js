@@ -2,9 +2,9 @@ const challenges = [
     {
       id: 1,
       title: "JS Drum Kit",
-      image: "",
-      demo: "",
-      repo: ""
+      image: "./assets/image_1.png",
+      demo: "https://hmothershed.github.io/JavaScript30/01-Drum-Kit/",
+      repo: "https://github.com/hmothershed/JavaScript30/tree/main/01-Drum-Kit"
     },
     {
       id: 2,
