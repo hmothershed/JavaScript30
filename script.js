@@ -9,7 +9,7 @@ const challenges = [
     {
       id: 2,
       title: "CSS + JS Clock",
-      image: "./assets/In Progress....png",
+      image: "./assets/in_progress.png",
       demo: "https://hmothershed.github.io/JavaScript30/02-CSS-and-JS-Clock/",
       repo: "https://github.com/hmothershed/JavaScript30/tree/main/02-CSS-and-JS-Clock"
     },
