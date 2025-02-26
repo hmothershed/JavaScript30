@@ -7,7 +7,7 @@
 | No | Title | REPOSITORY | DEMO |
 | :---: | ---- | :-------: | :-------: |
 | 01 | JavaScript Drum Kit | [README](https://github.com/hmothershed/JavaScript30/blob/main/01-Drum-Kit/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/01-Drum-Kit/) |
-| 02 | CSS + JS Clock | [README]() | [DEMO]() |
+| 02 | CSS + JS Clock | [README](https://github/com/hmothershed/JavaScript30/blob/main/02-CSS-and-JS-Clock/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/02-CSS-and-JS-Clock/) |
 | 03 | Playing with CSS Variables and JS | [README]() | [DEMO]() |
 | 04 | Array Cardio Day 1 | [README]() | [DEMO]() |
 | 05 | Flex Panels Image Gallery | [README]() | [DEMO]() |
