@@ -16,196 +16,196 @@ const challenges = [
     {
       id: 3,
       title: "CSS Variables",
-      image: "",
+      image: "./assets/in_progress.png",
       demo: "",
       repo: ""
     },
     {
       id: 4,
       title: "Array Cardio 1",
-      image: "",
+      image: "./assets/in_progress.png",
       demo: "",
       repo: ""
     },
     {
       id: 5,
       title: "Flex Panel Gallery",
-      image: "",
+      image: "./assets/in_progress.png",
       demo: "",
       repo: ""
     },
     {
       id: 6,
       title: "AJAX Type Ahead",
-      image: "",
+      image: "./assets/in_progress.png",
       demo: "",
       repo: ""
     },
     {
         id: 7,
         title: "Array Cardio 2",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
     },
     {
         id: 8,
         title: "HTML5 Canvas",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
     },
     {
         id: 9,
         title: "Dev tools domination",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 10,
         title: "multiple checkboxes",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 11,
         title: "html5 video player",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 12,
         title: "key detection",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 13,
         title: "slide in on scroll",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 14,
         title: "reference vs copy",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 15,
         title: "localstorage",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 16,
         title: "mouse move shadow",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 17,
         title: "sort without articles",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 18,
         title: "adding with reduce",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 19,
         title: "unreal webcam fun",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 20,
         title: "speech recognition",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 21,
         title: "geolocation compass",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 22,
         title: "follow along links",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 23,
         title: "speech synthesis",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 24,
         title: "sticky nav",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 25,
         title: "event propagation",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 26,
         title: "follow along dropdown",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 27,
         title: "click and drag",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 28,
         title: "speed controller",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 29,
         title: "countdown timer",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       },
       {
         id: 30,
         title: "whack a mole",
-        image: "",
+        image: "./assets/in_progress.png",
         demo: "",
         repo: ""
       }
