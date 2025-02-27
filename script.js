@@ -211,9 +211,16 @@ const challenges = [
       }
   ];
   
-  const challengeList = document.getElementById("challenges");
-  
-  function generateChallenges() {
+const challengeList = document.getElementById("challenges");
+let index = 0;
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+
+window.onload = () =>{
+	updateCarousel();
+};
+
+function generateChallenges() {
     challengeList.innerHTML = ``; //clear previous content
     challenges.forEach((challenge) => {
       challengeList.innerHTML += `
@@ -255,8 +262,23 @@ const challenges = [
                       </div>
         </div>
       `;
-    });
-  }
+   });
+}
+
+function updateCarousel() {
+	const challengeWidth = document.querySelector(".challenge").offsetWidth + 20;
+  const offset = (challengeList.offsetWidth - challengeWidth) / 2;
+  challengeList.style.transform = `translateX(${-index * challengeWidth + offset}px)`;
+}
+nextBtn.addEventListener("click", () =>{
+	index = (index + 1) % challenges.length;
+  updateCarousel();
+});
+prevBtn.addEventListener("click", () =>{
+	index = (index - 1 + challenges.length) % challenges.length;
+  updateCarousel();
+});
+
   
-  generateChallenges();
+generateChallenges();
   
