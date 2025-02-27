@@ -136,6 +136,7 @@ body {
   justify-content: center;
   transition: transform 0.5s ease-in-out;
   width: max-content;
+  font-family: var(--pixel);
 }
 .challenge{
   position: relative;
@@ -178,7 +179,7 @@ body {
   object-fit: cover;
 }
 .challenge-title{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -198,7 +199,7 @@ body {
   border: 2px solid black;
   width: 8rem;
   height: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .demo-link{
   background: var(--periwinkle);
