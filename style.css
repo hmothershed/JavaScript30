@@ -21,11 +21,18 @@
   --cherry: "Cherry Bomb One";
   --pixel: "Pixelify Sans";
 }
-
+html,body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 body {
   background: var(--bg-color);
 }
-
+.content-wrapper{
+    flex: 1;
+    position: relative;
+}
 .title-container{
   display: flex;
   flex-direction: column;
@@ -230,10 +237,118 @@ body {
 }
 .end-note{
     white-space: nowrap;
-    overflow: hidden;
     line-height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--pixel);
+}
+
+/* media queries */
+@media (max-width: 992px){
+    .header-title{
+        font-size: 4rem;
+    }
+    .star{
+        width: 30px;
+    }
+    .oval-1, .oval-2{
+        width: 70%;
+        height: 50%;
+    }
+    .header-desc{
+        font-size: 1rem;
+        width: 70%;
+        margin: 2rem auto;
+    }
+    .carousel-container{
+        width: 70%;
+    }
+    .challenge{
+        width: 20rem;
+    }
+    .challenge-img{
+        width: 18.125rem;
+        height: 12.125rem;
+    }
+    .challenge-links{
+        width: 5rem;
+    }
+    .challenge-title{
+        font-size: 1.5rem;
+    }
+    .end-note{
+        overflow: auto;
+    }
+}
+
+@media (max-width: 676px){
+    .header-title{
+        font-size: 3rem;
+    }
+    .star{
+        width: 20px;
+    }
+    .header-desc{
+        font-size: 0.75rem;
+        height: 50%;
+        margin: 1rem auto;
+    }
+    .carousel-container{
+        width: 70%;
+    }
+    .challenge{
+        width: 18.5rem;
+        height: 23.5rem;
+    }
+    .challenge-title{
+        font-size: 1.75rem;
+    }
+    .challenge-day{
+        height: 2.125rem;
+    }
+    .challenge-img{
+        width: 16rem;
+        height: 10.5rem;
+        margin-bottom: 2px;
+    }
+    svg, .btn1, .btn2, .btn3{
+        height: 16px;
+        width: 16px;
+    }
+    .challenge-text{
+        font-size: 1.5rem;
+    }
+    .challenge-link{
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .end-note{
+        text-wrap: wrap;
+        text-align: center;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        overflow: visible;
+    }
+}
+
+@media (max-width: 576px){
+    .header-title{
+        font-size: 2rem;
+    }
+    .challenge{
+        width: 14.4rem;
+        height: 23.5rem;
+    }
+    .challenge-img{
+        width: 12.125rem;
+        height: 9.125rem;
+        margin-bottom: 0;
+    }
+    .challenge-title{
+        font-size: 1.5rem;
+    }
+    .end-note{
+        overflow: visible;
+    }
 }
