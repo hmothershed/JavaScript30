@@ -23,7 +23,7 @@ const challenges = [
     {
       id: 4,
       title: "Array Cardio 1",
-      image: "./assets/in_progress.png",
+      image: "./assets/image_4.png",
       demo: "https://hmothershed.github.io/JavaScript30/04-Array-Cardio-Day-1/",
       repo: "https://github.com/hmothershed/JavaScript30/tree/main/04-Array-Cardio-Day-1"
     },
