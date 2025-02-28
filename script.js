@@ -16,9 +16,9 @@ const challenges = [
     {
       id: 3,
       title: "CSS Variables",
-      image: "./assets/in_progress.png",
-      demo: "",
-      repo: ""
+      image: "./assets/image_3.png",
+      demo: "https://hmothershed.github.io/JavaScript30/03-CSS-Variables/",
+      repo: "https://github.com/hmothershed/JavaScript30/tree/main/03-CSS-Variables"
     },
     {
       id: 4,
