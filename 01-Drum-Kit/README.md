@@ -1,7 +1,7 @@
 # Challenge #1 - JavaScript Drum Kit
 ![image](https://github.com/user-attachments/assets/be89e2e7-e976-4664-b248-2a06c7561818)
 
-## 📌 Demo [HERE](https://hmothershed.github.io/JavaScript30/01-Drum-Kit/)
+## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/01-Drum-Kit/)
 This is a simple and interactive drum kit built with HTML, CSS, and JavaScript. Press the corresponding keys on your keyboard to play drum sounds and enjoy a fun musical experience!
 
 ## 🚀 Features
