@@ -30,7 +30,7 @@ const challenges = [
     {
       id: 5,
       title: "Flex Panel Gallery",
-      image: "./assets/in_progress.png",
+      image: "./assets/image_5.png",
       demo: "https://hmothershed.github.io/JavaScript30/05-Flex-Panel-Gallery/",
       repo: "https://github.com/hmothershed/JavaScript30/tree/main/05-Flex-Panel-Gallery"
     },
