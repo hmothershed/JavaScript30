@@ -10,9 +10,9 @@
 | 02 | CSS + JS Clock | [README](https://github.com/hmothershed/JavaScript30/blob/main/02-CSS-and-JS-Clock/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/02-CSS-and-JS-Clock/) |
 | 03 | Playing with CSS Variables and JS | [README](https://github.com/hmothershed/JavaScript30/blob/main/03-CSS-Variables/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/03-CSS-Variables/) |
 | 04 | Array Cardio Day 1 | [README](https://github.com/hmothershed/JavaScript30/blob/main/04-Array-Cardio-Day-1/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/04-Array-Cardio-Day-1/) |
-| 05 | Flex Panels Image Gallery | [README](https://github.com/hmothershed/JavaScript30/blob/main/05-Flex-Panel-Gallery/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/05-Flex-Panel-Gallery) |
-| 06 | Ajax Type Ahead | [README](https://github.com/hmothershed/JavaScript30/blob/main/06-AJAX-Type-Ahead/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/06-AJAX-Type-Ahead) |
-| 07 | Array Cardio Day 2 | [README]() | [DEMO]() |
+| 05 | Flex Panels Image Gallery | [README](https://github.com/hmothershed/JavaScript30/blob/main/05-Flex-Panel-Gallery/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/05-Flex-Panel-Gallery/) |
+| 06 | Ajax Type Ahead | [README](https://github.com/hmothershed/JavaScript30/blob/main/06-AJAX-Type-Ahead/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/06-AJAX-Type-Ahead/) |
+| 07 | Array Cardio Day 2 | [README](https://github.com/hmothershed/JavaScript30/blob/main/07-Array-Cardio-Day-2/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/07-Array-Cardio-Day-2/) |
 | 08 | Fun with HTML5 Canvas | [README]() | [DEMO]() |
 | 09 | Dev Tools Domination | [README]() | [DEMO]() |
 | 10 | Hold Shift to Check Multiple Checkboxes | [README]() | [DEMO]() |
