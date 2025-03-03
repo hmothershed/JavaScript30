@@ -37,9 +37,9 @@ const challenges = [
     {
       id: 6,
       title: "AJAX Type Ahead",
-      image: "./assets/in_progress.png",
-      demo: "",
-      repo: ""
+      image: "./assets/image_6.png",
+      demo: "https://hmothershed.github.io/JavaScript30/06-AJAX-Type-Ahead/",
+      repo: "https://github.com/hmothershed/JavaScript30/tree/main/06-AJAX-Type-Ahead"
     },
     {
         id: 7,
