@@ -82,7 +82,16 @@
     canvas.addEventListener("mouseout", () => (isDrawing = false));
     
     // touch events for mobile devices
-    canvas.addEventListener('touchmove', draw);
+    canvas.addEventListener('touchstart', (e) =>{
+      e.preventDefault(); //prevent scrolling
+      isDrawing = true;
+      [lastX, lastY] = [e.touches[0].clientX, e.touches[0].clientY];
+    });
+    
+    canvas.addEventListener('touchmove', (e) => {
+      e.preventDefault(); //prevent scrolling
+      draw(e)
+    });
     canvas.addEventListener('touchend', () => (isDrawing = false));
     canvas.addEventListener('touchcancel', () => (isDrawing = false));
     
@@ -134,6 +143,7 @@
     }
     canvas {
       cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 32 32" style="font-size:24px;"><text y="24" font-family="Arial" font-size="24">🖌️</text></svg>') 16 16, auto;
+      touch-action: none; /* prevent scrolling while touching the canvas */
     }
   </style>
 
