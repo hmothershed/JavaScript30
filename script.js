@@ -51,9 +51,9 @@ const challenges = [
     {
         id: 8,
         title: "HTML5 Canvas",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_8.png",
+        demo: "https://hmothershed.github.io/JavaScript30/08-HTML5-Canvas/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/08-HTML5-Canvas"
     },
     {
         id: 9,
