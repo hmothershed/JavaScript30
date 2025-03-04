@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+  <link rel="stylesheet" href="" />
+</head>
+<body>
+  <canvas id="draw" width="800" height="800"></canvas>
+  <button id="clearBtn">Clear</button>
+  <div id="message"></div>
+
+  <script>
+    const canvas = document.querySelector("#draw");
+    const ctx = canvas.getContext("2d");
+    const clearBtn = document.querySelector("#clearBtn");
+    const message = document.querySelector("#message");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    ctx.strokeStyle = "#BADA55";
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
+    ctx.lineWidth = 100;
+    
+    let isDrawing = false;
+    let lastX = 0;
+    let lastY = 0;
+    let hue = 0;
+    let direction = true;
+    
+    function showMessage() {
+      if (window.matchMedia("(pointer: coarse)").matches) {
+        message.textContent = "Touch and drag to draw";
+      } else {
+        message.textContent = "Click and drag to draw";
+      }
+      message.style.display = "block";
+    }
+    
+    function hideMessage() {
+      message.style.display = "none";
+    }
+    
+    function draw(e) {
+      if (!isDrawing) return;
+      hideMessage();
+      console.log(e);
+      ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+      ctx.beginPath();
+      //start from
+      ctx.moveTo(lastX, lastY);
+      let x, y;
+      
+      if (e.touches){
+        x = e.touches[0].clientX;
+        y = e.touches[0].clientY;
+      }
+      else{
+        x = e.offsetX;
+        y = e.offsetY;
+      }
+      
+      //go to
+      ctx.lineTo(x, y);
+      ctx.stroke();
+      [lastX, lastY] = [x, y];
+    
+      hue++;
+      if (hue >= 360) hue = 0;
+      if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) direction = !direction;
+      direction ? ctx.lineWidth++ : ctx.lineWidth--;
+    }
+    
+    canvas.addEventListener("mousedown", (e) => {
+      isDrawing = true;
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+    });
+    
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mouseup", () => (isDrawing = false));
+    canvas.addEventListener("mouseout", () => (isDrawing = false));
+    
+    // touch events for mobile devices
+    canvas.addEventListener('touchmove', draw);
+    canvas.addEventListener('touchend', () => (isDrawing = false));
+    canvas.addEventListener('touchcancel', () => (isDrawing = false));
+    
+    // clear button
+    clearBtn.addEventListener("click", () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      showMessage();
+    });
+    
+    showMessage();
+  </script>
+  
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+    }
+    body{
+      padding: 0;
+      font-family: 'Cherry Bomb One';
+    }
+    
+    #clearBtn {
+      text-transform: uppercase;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background: #138D75;
+      color: #F0EEF3;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: 'Cherry Bomb One';
+    }
+    
+    #message {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
+      color: #138D75;
+      text-align: center;
+      line-height: 1;
+    }
+    canvas {
+      cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 32 32" style="font-size:24px;"><text y="24" font-family="Arial" font-size="24">🖌️</text></svg>') 16 16, auto;
+    }
+  </style>
+
+</body>
+</html>
