@@ -13,7 +13,7 @@
 | 05 | Flex Panels Image Gallery | [README](https://github.com/hmothershed/JavaScript30/blob/main/05-Flex-Panel-Gallery/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/05-Flex-Panel-Gallery/) |
 | 06 | Ajax Type Ahead | [README](https://github.com/hmothershed/JavaScript30/blob/main/06-AJAX-Type-Ahead/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/06-AJAX-Type-Ahead/) |
 | 07 | Array Cardio Day 2 | [README](https://github.com/hmothershed/JavaScript30/blob/main/07-Array-Cardio-Day-2/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/07-Array-Cardio-Day-2/) |
-| 08 | Fun with HTML5 Canvas | [README]() | [DEMO]() |
+| 08 | Fun with HTML5 Canvas | [README](https://github.com/hmothershed/JavaScript30/blob/main/08-HTML5-Canvas/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/08-HTML5-Canvas/) |
 | 09 | Dev Tools Domination | [README]() | [DEMO]() |
 | 10 | Hold Shift to Check Multiple Checkboxes | [README]() | [DEMO]() |
 | 11 | Custom HTML5 Video Player | [README]() | [DEMO]() |
