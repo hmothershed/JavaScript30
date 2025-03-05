@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+  <link rel="icon" href="https://fav.farm/✅" />
+</head>
+<body>
+  <header>
+    <p>Take a look in the console!</p>
+  </header>
+
+  <div class="container">
+    <button class="make-green" onClick="makeGreen()">MAKE IT GREEN</button>
+  </div>
+  <script>
+    const dogs = [{
+      name: 'Snickers',
+      age: 2
+    }, {
+      name: 'Hugo',
+      age: 8
+    }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+    // Regular
+    console.log("hello");
+    // Interpolated
+    console.log("Eat all the %s!", "🥓");
+    // Interpolated with ES6 backticks
+    const bacon = "🥓"
+    console.log(`Makin' ${bacon} with ES6 backticks`);
+    // Styled
+    console.log("%c I am some big text", "font-size: 50px;");
+    // warning!
+    console.warn("OH NO A WARNING");
+    // Error :|
+    console.error("💩💩💩");
+    // Info
+    console.info("Dogs can't operate MRI Machines, but catscan.");
+    // Testing
+    console.assert(1 === 1, "This won't show");
+    console.assert(1 === 2, "This will show")
+    // clearing
+    // console.clear();
+    // Let's not do this because we won't see anything.
+    // Viewing DOM Elements
+    const p = document.querySelector("p");
+    console.log(p); // just logs it
+    console.dir(p); // gives a dropdown
+    // Grouping together
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`);
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old.`);
+      console.log(`${dog.name} is ${dog.age*7} dog years old.`);
+      console.groupEnd(`${dog.name}`);
+    });
+    // can also use console.groupCollapsed to log the info without them being expanded
+    // table
+    console.table(dogs);
+    // counting
+    console.count('Harmony');
+    console.count('Harmony');
+    console.count("Heyy");
+    console.count('Harmony');
+    console.count("Heyyy");
+    console.count("Laugh at my joke lol");
+    // timing
+    console.time("Grabbing my GitHub info")
+    fetch('https://api.github.com/users/hmothershed')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd("Grabbing my GitHub info");
+        console.log(data);
+      });
+  </script>
+</body>
+</html>
