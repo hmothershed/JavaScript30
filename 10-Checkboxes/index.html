@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hold Shift to Check Multiple Checkboxes</title>
+  <link rel="icon" href="https://fav.farm/✅" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" />
+</head>
+
+<body>
+  <style>
+    html {
+      font-family: sans-serif;
+      background: rgb(238, 174, 202);
+      background: radial-gradient(circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%);
+    }
+
+    .title {
+      text-align: center;
+      font-family: "Cherry Bomb One";
+      color: white;
+      text-transform: uppercase;
+      font-size: 2.15rem;
+      font-weight: 400;
+      overflow: hidden;
+    }
+
+    .inbox {
+      max-width: 400px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .item:last-child {
+      border-bottom: 0;
+    }
+
+    input:checked+p {
+      background: #f9f9f9;
+      text-decoration: line-through;
+    }
+
+    input[type="checkbox"] {
+      margin: 20px;
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><rect width="31" height="31" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 25.8333C12.6519 25.2133 3.875 20.3567 3.875 11.625C3.875 10.2695 4.30149 8.94837 5.09406 7.84874C5.88663 6.74911 7.0051 5.92673 8.29103 5.49808C9.57696 5.06944 10.9652 5.05627 12.259 5.46043C13.5528 5.86459 14.6867 6.6656 15.5 7.75C16.3133 6.6656 17.4472 5.86459 18.741 5.46043C20.0348 5.05627 21.423 5.06944 22.709 5.49808C23.9949 5.92673 25.1134 6.74911 25.9059 7.84874C26.6985 8.94837 27.125 10.2695 27.125 11.625C27.125 20.3567 18.3481 25.2133 15.5 25.8333Z" fill="%23AFAFAF"/></svg>') no-repeat center;
+      background-size: contain;
+      border: none;
+    }
+
+    input[type="checkbox"]:checked {
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 20.8333C9.65188 20.2133 0.875 15.3567 0.875 6.625C0.875 5.26951 1.30149 3.94837 2.09406 2.84874C2.88663 1.74911 4.0051 0.926729 5.29103 0.498085C6.57696 0.0694408 7.96516 0.0562672 9.259 0.460431C10.5528 0.864594 11.6867 1.6656 12.5 2.75C13.3133 1.6656 14.4472 0.864594 15.741 0.460431C17.0348 0.0562672 18.423 0.0694408 19.709 0.498085C20.9949 0.926729 22.1134 1.74911 22.9059 2.84874C23.6985 3.94837 24.125 5.26951 24.125 6.625C24.125 15.3567 15.3481 20.2133 12.5 20.8333Z" fill="%23EE8EC3"/><path d="M17.4047 6.156C17.48 6.22772 17.5404 6.31358 17.5825 6.40866C17.6246 6.50374 17.6475 6.60618 17.65 6.71013C17.6525 6.81408 17.6345 6.91751 17.597 7.0145C17.5596 7.11149 17.5033 7.20015 17.4316 7.27541L11.5812 13.4187L8.3686 10.0462C8.22373 9.89423 8.14517 9.6909 8.15022 9.48096C8.15527 9.27103 8.2435 9.0717 8.39552 8.92683C8.54753 8.78196 8.75087 8.7034 8.9608 8.70845C9.17073 8.7135 9.37006 8.80173 9.51493 8.95375L11.5812 11.1229L16.2853 6.18291C16.357 6.10763 16.4428 6.04722 16.5379 6.00512C16.633 5.96302 16.7354 5.94007 16.8394 5.93757C16.9434 5.93507 17.0468 5.95308 17.1438 5.99055C17.2408 6.02803 17.3294 6.08425 17.4047 6.156Z" fill="white"/></svg>') no-repeat center;
+      background-size: contain;
+    }
+
+    p {
+      margin: 0;
+      padding: 20px;
+      transition: background 0.2s;
+      flex: 1;
+      font-family: "helvetica neue";
+      font-size: 20px;
+      font-weight: 200;
+      border-left: 1px solid #d1e2ff;
+    }
+  </style>
+  <!--
+   The following is a common layout you would see in an email client.
+
+   When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes in-between those two checkboxes should be checked.
+
+  -->
+  <h1 class="title">Hold Shift + Click Multiple Checkboxes</h1>
+  <div class="inbox">
+    <div class="item">
+      <input type="checkbox">
+      <p>This is an inbox layout.</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Check one item</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Hold down your Shift key</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Check a lower item</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Everything in between should also be set to checked</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Try do it without any libraries</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Just regular JavaScript</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Good Luck!</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Don't forget to tweet your result!</p>
+    </div>
+  </div>
+
+  <script>
+    const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+    let lastChecked;
+
+    function handleCheck(e) {
+      //Check if they had the shift key down AND check that they are checking it
+      let inBetween = false;
+      if (e.shiftKey && this.checked) {
+        //go ahead and do what we please, loop over every single checkbox
+        checkboxes.forEach(checkbox => {
+          console.log(checkbox);
+          if (checkbox === this || checkbox === lastChecked) {
+            inBetween = !inBetween;
+            console.log('Starting to check them in between!');
+          }
+          if (inBetween) {
+            checkbox.checked = true;
+          }
+        });
+      }
+      lastChecked = this;
+    }
+    checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+  </script>
+</body>
+
+</html>
