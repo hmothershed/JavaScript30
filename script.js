@@ -65,9 +65,9 @@ const challenges = [
       {
         id: 10,
         title: "multiple checkboxes",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_10.png",
+        demo: "https://hmothershed.github.io/JavaScript30/10-Checkboxes/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/10-Checkboxes"
       },
       {
         id: 11,
