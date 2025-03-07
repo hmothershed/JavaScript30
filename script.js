@@ -59,8 +59,8 @@ const challenges = [
         id: 9,
         title: "Dev tools domination",
         image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        demo: "https://hmothershed.github.io/JavaScript30/09-Dev-Tools-Domination/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/09-Dev-Tools-Domination"
       },
       {
         id: 10,
