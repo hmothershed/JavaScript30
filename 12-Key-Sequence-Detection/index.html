@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Detection</title>
+  <link rel="icon" href="https://fav.farm/✅" />
+  <style>
+  @import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap);
+    html, body {
+      height: 100%;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto Mono',  sans-serif;
+      background: #1f212e;
+      color: #61698d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      flex-direction: column;
+    }
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .correct {
+      color: green;
+    }
+    .incorrect {
+      color: red;
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+    }
+    .heart-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .heart {
+      position: absolute;
+      font-size: 1.5rem;
+      animation: fall 3s linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-10px) scale(1); opacity: 1; }
+      100% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+    }
+    #button-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 15px;
+    }
+    button {
+      display: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #ff4d79;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff1a57;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="message">Enter the Secret Code: <span id="secretText"></span></p>
+  <input type="text" id="hiddenInput" autocomplete="off" autofocus>
+  <div id="button-container">
+    <button id="resetButton">Try Again</button>
+  </div>
+  <div class="heart-container"></div>
+
+  <script>
+    const secretCode = "harmony";
+    const message = document.getElementById("message");
+    const hiddenInput = document.getElementById("hiddenInput");
+    const resetButton = document.getElementById("resetButton");
+    const buttonContainer = document.getElementById("button-container");
+    const heartContainer = document.querySelector(".heart-container");
+
+    function initializeSecretText() {
+      const secretText = document.createElement("span");
+      secretText.id = "secretText";
+      secretCode.split("").forEach(letter => {
+        let span = document.createElement("span");
+        span.textContent = letter;
+        secretText.appendChild(span);
+      });
+      return secretText;
+    }
+    
+     function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️";
+      const colors = ["💙", "💜", "💛", "💚", "❤️"];
+      heart.innerHTML = colors[Math.floor(Math.random() * colors.length)];
+      heart.style.left = `${Math.random() * 100}vw`;
+      heart.style.animationDuration = `${2 + Math.random() * 3}s`;
+      heartContainer.appendChild(heart);
+      setTimeout(() => { heart.remove(); }, 3000);
+    }
+
+    function resetGame() {
+      message.innerHTML = 'Enter the Secret Code: ';
+      message.appendChild(initializeSecretText());
+      hiddenInput.value = "";
+      hiddenInput.focus();
+      resetButton.style.display = "none";
+      spans = document.querySelectorAll("#secretText span");
+      clearInterval(heartInterval);
+    }
+
+    message.appendChild(initializeSecretText());
+    let spans = document.querySelectorAll("#secretText span");
+
+    // focus input on click (for mobile users)
+    document.body.addEventListener("click", () => hiddenInput.focus());
+
+    hiddenInput.addEventListener("input", () => {
+      let typedText = hiddenInput.value;
+
+      spans.forEach((span, index) => {
+        if (typedText[index] === undefined) {
+          span.classList.remove("correct", "incorrect");
+        } else if (typedText[index] === secretCode[index]) {
+          span.classList.add("correct");
+          span.classList.remove("incorrect");
+        } else {
+          span.classList.add("incorrect");
+          span.classList.remove("correct");
+        }
+      });
+
+      // if input matches the secret code, change the message and show reset button
+      if (typedText === secretCode) {
+        message.innerHTML = "You entered the secret code!";
+        buttonContainer.style.display = "flex";
+        resetButton.style.display = "block";
+        heartInterval = setInterval(createHeart, 200);
+      }
+
+      // reset if input is longer than secretCode or incorrect
+      if (typedText.length > secretCode.length || (!secretCode.startsWith(typedText) && typedText.length > 0)) {
+        hiddenInput.value = "";
+        spans.forEach(span => span.classList.remove("correct", "incorrect"));
+      }
+    });
+
+    // reset everything when the button is clicked
+    resetButton.addEventListener("click", resetGame);
+  </script>
+
+</body>
+</html>
