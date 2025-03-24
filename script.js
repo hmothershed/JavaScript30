@@ -72,7 +72,7 @@ const challenges = [
       {
         id: 11,
         title: "html5 video player",
-        image: "./assets/in_progress.png",
+        image: "./assets/image_11.png",
         demo: "https://hmothershed.github.io/JavaScript30/11-Custom-Video-Player/",
         repo: "https://github.com/hmothershed/JavaScript30/tree/main/11-Custom-Video-Player"
       },
