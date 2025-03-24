@@ -16,7 +16,7 @@
 | 08 | Fun with HTML5 Canvas | [README](https://github.com/hmothershed/JavaScript30/blob/main/08-HTML5-Canvas/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/08-HTML5-Canvas/) |
 | 09 | Dev Tools Domination | [README](https://github.com/hmothershed/JavaScript30/blob/main/09-Dev-Tools-Domination/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/09-Dev-Tools-Domination/) |
 | 10 | Hold Shift to Check Multiple Checkboxes | [README](https://github.com/hmothershed/JavaScript30/blob/main/10-Checkboxes/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/10-Checkboxes/) |
-| 11 | Custom HTML5 Video Player | [README]() | [DEMO]() |
+| 11 | Custom HTML5 Video Player | [README](https://github.com/hmothershed/JavaScript30/blob/main/11-Custom-Video-Player/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/11-Custom-Video-Player/) |
 | 12 | Key Sequence Detection (KONAMI CODE) | [README]() | [DEMO]() |
 | 13 | Slide In on Scroll | [README]() | [DEMO]() |
 | 14 | Object and Arrays - Reference VS Copy | [README]() | [DEMO]() |
