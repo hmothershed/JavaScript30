@@ -79,9 +79,9 @@ const challenges = [
       {
         id: 12,
         title: "key detection",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_12.png",
+        demo: "https://hmothershed.github.io/JavaScript30/12-Key-Sequence-Detection/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/12-Key-Sequence-Detection"
       },
       {
         id: 13,
