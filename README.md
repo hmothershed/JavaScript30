@@ -17,7 +17,7 @@
 | 09 | Dev Tools Domination | [README](https://github.com/hmothershed/JavaScript30/blob/main/09-Dev-Tools-Domination/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/09-Dev-Tools-Domination/) |
 | 10 | Hold Shift to Check Multiple Checkboxes | [README](https://github.com/hmothershed/JavaScript30/blob/main/10-Checkboxes/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/10-Checkboxes/) |
 | 11 | Custom HTML5 Video Player | [README](https://github.com/hmothershed/JavaScript30/blob/main/11-Custom-Video-Player/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/11-Custom-Video-Player/) |
-| 12 | Key Sequence Detection (KONAMI CODE) | [README]() | [DEMO]() |
+| 12 | Key Sequence Detection (KONAMI CODE) | [README](https://github.com/hmothershed/JavaScript30/blob/main/12-Key-Sequence-Detection/README.md) | [DEMO](https://hmothershed.github.io/JavaScript30/12-Key-Sequence-Detection/) |
 | 13 | Slide In on Scroll | [README]() | [DEMO]() |
 | 14 | Object and Arrays - Reference VS Copy | [README]() | [DEMO]() |
 | 15 | LocalStorage and Event Delegation | [README]() | [DEMO]() |
