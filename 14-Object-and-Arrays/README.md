@@ -30,6 +30,7 @@ const players = ["Harmony", "Sarah", "Ryan", "Poppy"];
 const team = players;
 console.log(players, team);
 ```
+
 ### 3. Creating True Copy of an Array
 All these methods create a new array instead of referencing the original. Modifying the new array does not affect the original one.
 #### Using `slice()`
@@ -41,10 +42,38 @@ const team2 = players.slice();
 const team3 = [].concat(players);
 ```
 #### Using Spread Operator (ES6)
+```js
+const team4 = [...players];
+team4[3] = 'hee haww';
+console.log(team4);
+```
+#### Using `Array.from()`
+```js
+const team5 = Array.from(players);
+```
 
 ### 4. Copying Objects by Reference
+⛔️PROBLEM⛔️ `captain` is a reference, not a copy. Modifying `captain` also modifies `person`.
+```js
+const person = {
+  name: 'Harmony Mothershed',
+  age: 80
+};
+const captain = person;
+captain.number = 99; // Also modifies `person`
+```
 
 ### 5. Creating a True Copy of an Object
+LIMITATION: this only performs a **shallow copy** - nested objects are still referenced!
+#### Using `Object.assign()`
+```js
+const cap2 = Object.assign({}, person, { number: 99, age: 12 });
+console.log(cap2);
+```
+#### Using Spread Operator (ES6)
+```js
+const cap3 = {...person};
+```
 
 ### 6. Deep Copying Objects
 `JSON.parse(JSON.stringify(obj))` creates a deep copy. This ensures nested objects are not referenced. However, this method does not preserve functions or special object types (e.g., `Date`).
