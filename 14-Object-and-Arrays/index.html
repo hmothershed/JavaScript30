@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JS Reference VS Copy</title>
+    <link rel="icon" href="https://fav.farm/✅" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap"
+    />
+  </head>
+  <body>
+    <p>Psst... have a look at the JavaScript Console 😉</p>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background: #fbfbff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      p {
+        color: #42c4f9;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        font-family: "Cherry Bomb One", sans-serif;
+        font-variant-emoji: text;
+        overflow: hidden;
+        border-right: 0.15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        animation:
+          typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+    </style>
+    <script>
+      // start with strings, numbers and booleans
+      // let age = 100;
+      // let age2 = age;
+      // console.log(age, age2);
+      // age = 200;
+      // console.log(age, age2);
+
+      // let name = 'Katherine';
+      // let name2 = name;
+      // console.log(name, name2);
+      // name = 'kathy';
+      // console.log(name, name2);
+
+      // let's say we have an array
+      const players = ["Katherine", "Sarah", "Ryan", "Poppy"];
+
+      // and we want to make a copy of it.
+      const team = players;
+
+      console.log(players, team);
+
+      // you might think we can just do something like this:
+      // team[3] = 'Lux';
+
+      // however what happens when we update that array?
+      // now here is the problem!
+      // oh no - we have edidted the original array too!
+      // why?? it's because that is an ARRAY REFERENCE, not an array copy. They both point to the same array!
+      // so... how do we fix this? we take a copy instead!
+      const team2 = players.slice();
+
+      // one way
+      // or create a new array and concat the old one in
+      const team3 = [].concat(players);
+
+      // or use the new ES6 Spread
+      const team4 = [...players];
+      team4[3] = "hee haww";
+      console.log(team4);
+
+      const team5 = Array.from(players);
+
+      // now when we update it, the original one isn't changed
+      // the same thing goes for objects, let's say we have a person object with Objects
+      const person = {
+        name: "Harmony Mothershed",
+        age: 23,
+      };
+
+      // and think we make a copy:
+      // const captain = person;
+      // captain.number = 99;
+
+      // how do we take a copy instead?
+      const cap2 = Object.assign({}, person, { number: 99, age: 12 });
+      console.log(cap2);
+
+      // we will hopefully soon see the object ...spread
+      // const cap3 = {...person};
+
+      // things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+      const harmony = {
+        name: "Harmony",
+        age: 100,
+        social: {
+          instagram: "@dehsrehtom",
+          twitter: "@dehsrehtom",
+        },
+      };
+
+      console.clear();
+      console.log(harmony);
+
+      const dev = Object.assign({}, harmony);
+
+      const dev2 = JSON.parse(JSON.stringify(harmony));
+    </script>
+  </body>
+</html>
