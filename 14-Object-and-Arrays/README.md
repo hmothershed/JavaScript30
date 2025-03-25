@@ -98,3 +98,6 @@ const dev2 = JSON.parse(JSON.stringify(harmony));
   
   <br>
 Understanding this concept helps prevent unintended data modifications and ensures safer state management in JavaScript applications!
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b156d1b-0e7e-4cdf-9aa3-e04fb205ff96" />
+</p>
