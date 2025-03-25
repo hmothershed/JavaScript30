@@ -86,9 +86,9 @@ const challenges = [
       {
         id: 13,
         title: "slide in on scroll",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_13.png",
+        demo: "https://hmothershed.github.io/JavaScript30/13-Slide-Scroll/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/13-Slide-Scroll"
       },
       {
         id: 14,
