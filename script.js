@@ -93,9 +93,9 @@ const challenges = [
       {
         id: 14,
         title: "reference vs copy",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_14.png",
+        demo: "https://hmothershed.github.io/JavaScript30/14-Object-and-Arrays/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/14-Object-and-Arrays"
       },
       {
         id: 15,
