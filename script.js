@@ -100,9 +100,9 @@ const challenges = [
       {
         id: 15,
         title: "localstorage",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_15.png",
+        demo: "https://hmothershed.github.io/JavaScript30/15-LocalStorage/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/15-LocalStorage"
       },
       {
         id: 16,
