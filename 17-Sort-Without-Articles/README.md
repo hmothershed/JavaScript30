@@ -1,4 +1,5 @@
 # Challenge #17 - Sort Without Articles
+![WithoutArticles](https://github.com/user-attachments/assets/53144956-752a-4350-9e22-bb297cc4b15e)
 
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/17-Sort-Without-Articles/)
 Sort without articles is a simple web application that sorts a list of band names alphabetically while ignoring common articles like "A", "An", and "The". Users can toggle between sorted and unsorted views with a button click.
