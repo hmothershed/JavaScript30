@@ -107,9 +107,9 @@ const challenges = [
       {
         id: 16,
         title: "mouse move shadow",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_16.png",
+        demo: "https://hmothershed.github.io/JavaScript30/16-Mouse-Move-Shadow/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/16-Mouse-Move-Shadow"
       },
       {
         id: 17,
