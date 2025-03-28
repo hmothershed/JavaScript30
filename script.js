@@ -114,9 +114,9 @@ const challenges = [
       {
         id: 17,
         title: "sort without articles",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_17.png",
+        demo: "https://hmothershed.github.io/JavaScript30/17-Sort-Without-Articles/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/17-Sort-Without-Articles"
       },
       {
         id: 18,
