@@ -1,5 +1,7 @@
 # Challenge #16 - Text Shadow Mouse Move Effect
 
+![MoveShadow](https://github.com/user-attachments/assets/63b77516-85e9-4395-a5e7-7625e006a76b)
+
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/16-Mouse-Move-Shadow/)
 Mouse Shadow is a fun interactive web effect where the text shadow dynamically changes based on mouse movements. As you move the mouse over the page, the shadow follows the cursor witha  vibrant multi-colored effect.
 
