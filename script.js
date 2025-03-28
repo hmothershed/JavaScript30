@@ -121,9 +121,9 @@ const challenges = [
       {
         id: 18,
         title: "adding with reduce",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_18.png",
+        demo: "https://hmothershed.github.io/JavaScript30/18-Adding-Up-Times-with-Reduce/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/18-Adding-Up-Times-with-Reduce"
       },
       {
         id: 19,
