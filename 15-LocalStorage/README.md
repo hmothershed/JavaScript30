@@ -1,4 +1,5 @@
 # Challenge #15 - LocalStorage and Event Delegation
+![LocalStorage](https://github.com/user-attachments/assets/62127a7f-66fb-459e-a17f-8b8c2f8e978a)
 
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/15-LocalStorage/)
 THis is a simple web-based to-do list that uses LocalStorage to persist data. Users can add, remove, and toggle the completion status of items on the list.
