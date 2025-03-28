@@ -1,6 +1,6 @@
 # Challenge #12 - Key Sequence Detection
 
-![image](https://github.com/user-attachments/assets/a40a46ad-fe06-4f98-8724-2fece95f64f3)
+![KeyDetection](https://github.com/user-attachments/assets/6aeb22cd-4f0a-4475-93c5-7ffba255dad9)
 
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/12-Key-Sequence-Detection/)
 This project is a simple key detection game where users must enter a secret code correctly. If they succeed, a congratulatory message appears with a falling heart animation. (This is my interpretation of the code, the original code from WesBos is down below)
