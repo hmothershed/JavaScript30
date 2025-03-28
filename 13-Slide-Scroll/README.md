@@ -1,4 +1,5 @@
 # Challenge #13 - Slide In on Scroll
+![Slide-Scroll](https://github.com/user-attachments/assets/310a62df-9eb1-4f71-a875-327a586c0062)
 
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/13-Slide-Scroll/)
 A simple web page that triggers slide-in animations when elements come into view while scrolling. This effect enhances user experience by adding smooth visual interactions.
