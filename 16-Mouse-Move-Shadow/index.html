@@ -1,0 +1,82 @@
+make a readme.md for this code that has a title, sentence about the project, feature section, and how it works section. the how it works section should reference back to code snippets:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Shadow</title>
+  <link rel="icon" href="https://fav.farm/✅" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="hero">
+    <h1 contenteditable>
+      🤪WAZZUP!
+    </h1>
+  </div>
+
+  <style>
+    html {
+      color: black;
+      font-family: 'Rubik Glitch', sans-serif;
+      font-weight: 100;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+
+    h1 {
+      text-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+      font-size: 100px;
+    }
+  </style>
+
+  <script>
+    // query the main container with class 'hero' and the h1 text
+    const hero = document.querySelector('.hero');
+    const text = hero.querySelector('h1');
+    // define how far the shadow moves in pixels
+    const walk = 500; //500px
+    
+    // function to calculate the shadow based on mouse position
+    function shadow(e){
+      const { offsetWidth: width, offsetHeight: height } = hero; // get width and height of the hero section
+      let { offsetX: x, offsetY: y } = e; // get the mouse coordinates relative to the container
+      
+      // if the mouse event is triggered by a child element, adjust coordinates
+      if (this !== e.target){
+        x = x + e.target.offsetLeft;
+        y = y + e.target.offsetTop;
+      }
+      
+      // calculate how far to move the shadow based on the mouse position
+      const xWalk = Math.round((x / width * walk) - (walk / 2));
+      const yWalk = Math.round((y / height * walk) - (walk / 2));
+      
+      // apply a multi-colored text shadow based on the mouse position
+      text.style.textShadow = `
+      ${xWalk}px ${yWalk}px 0 rgba(255, 0, 255, 0.7),
+      ${xWalk * -1}px ${yWalk}px 0 rgba(0, 255, 255, 0.7),
+      ${yWalk}px ${xWalk * -1}px 0 rgba(0, 255, 0, 0.7),
+      ${yWalk * -1}px ${xWalk}px 0 rgba(0, 0, 255, 0.7)
+      `;
+    }
+    
+    // add event listenter for mouse movement over the 'hero' container
+    hero.addEventListener('mousemove', shadow);
+  </script>
+</body>
+
+</html>
