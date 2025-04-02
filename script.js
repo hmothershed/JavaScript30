@@ -129,15 +129,15 @@ const challenges = [
         id: 19,
         title: "unreal webcam fun",
         image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        demo: "https://hmothershed.github.io/JavaScript30/19-Webcam-Fun/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/19-Webcam-Fun"
       },
       {
         id: 20,
         title: "speech recognition",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_20.png",
+        demo: "https://hmothershed.github.io/JavaScript30/20-Speech-Recognition/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/20-Speech-Recognition"
       },
       {
         id: 21,
