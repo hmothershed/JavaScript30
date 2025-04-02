@@ -7,8 +7,7 @@ const snap = document.querySelector(".snap");   // audio element for camera shut
 
 // function to access the webcam and display the video feed
 function getVideo() {
-  navigator.mediaDevices
-    .getUserMedia({ video: true, audio: false })  // request access to webcam video (no audio)
+  navigator.mediaDevices.getUserMedia({ video: true, audio: false })  // request access to webcam video (no audio)
     .then((localMediaStream) => {
       console.log(localMediaStream);
 
@@ -57,10 +56,10 @@ function takePhoto() {
   snap.play();    // play canera shutter sound
 
   // convert canvas image to a downloadable data URL (JPEG format)
-  const data = canvas.toDataURL("image/jpeg");
-  const link = document.createElement("a");
+  const data = canvas.toDataURL('image/jpeg');
+  const link = document.createElement('a');
   link.href = data;
-  link.setAttribute("download", "imageFun");
+  link.setAttribute('download', 'imageFun');
   link.innerHTML = `<img src="${data}" alt="Photo" />`;
   
   // insert the captured image at the beginning of the strip container
@@ -92,12 +91,12 @@ function greenScreen(pixels) {
   const levels = {};
 
   // get user-defined color range values from input fields
-  document.querySelectorAll(".rgb input").forEach((input) => {
+  document.querySelectorAll('.rgb input').forEach((input) => {
     levels[input.name] = input.value;
   });
 
   // loop thorugh every pixel in the image data
-  for (i = 0; i < pixels.data.lenght; i += 4) {
+  for (i = 0; i < pixels.data.lenght; i = i + 4) {
     red = pixels.data[i + 0];
     green = pixels.data[i + 1];
     blue = pixels.data[i + 2];
@@ -121,4 +120,4 @@ function greenScreen(pixels) {
 
 getVideo();
 // once the video is ready, start painting it onto the canvas
-video.addEventListener("canplay", paintToCanvas);
+video.addEventListener('canplay', paintToCanvas);
