@@ -63,7 +63,7 @@ function takePhoto() {
   link.innerHTML = `<img src="${data}" alt="Photo" />`;
   
   // insert the captured image at the beginning of the strip container
-  strip.insertBefore(link, stip.firstChild);
+  strip.insertBefore(link, strip.firstChild);
 }
 
 // function to apply a red effect to the video feed
@@ -96,7 +96,7 @@ function greenScreen(pixels) {
   });
 
   // loop thorugh every pixel in the image data
-  for (i = 0; i < pixels.data.lenght; i = i + 4) {
+  for (i = 0; i < pixels.data.length; i = i + 4) {
     red = pixels.data[i + 0];
     green = pixels.data[i + 1];
     blue = pixels.data[i + 2];
