@@ -128,7 +128,7 @@ const challenges = [
       {
         id: 19,
         title: "unreal webcam fun",
-        image: "./assets/in_progress.png",
+        image: "./assets/image_19.jpeg",
         demo: "https://hmothershed.github.io/JavaScript30/19-Webcam-Fun/",
         repo: "https://github.com/hmothershed/JavaScript30/tree/main/19-Webcam-Fun"
       },
