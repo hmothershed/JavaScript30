@@ -1,4 +1,5 @@
 # Challenge #20 - Native Speech Recognition
+![SpeechRecognition](https://github.com/user-attachments/assets/b25edc76-4a43-4451-b2f4-7490665948b1)
 
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/20-Speech-Recognition/)
 This project utilizes the Web Speech API to enable real-time speech recognition in a web browser, allowing spoken words to be translated into text dynamically.
