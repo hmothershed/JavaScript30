@@ -142,23 +142,23 @@ const challenges = [
       {
         id: 21,
         title: "geolocation compass",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_21.png",
+        demo: "https://hmothershed.github.io/JavaScript30/21-Geolocation/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/21-Geolocation"
       },
       {
         id: 22,
         title: "follow along links",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_22.png",
+        demo: "https://hmothershed.github.io/JavaScript30/22-Follow-Along-Link-Highlighter/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/22-Follow-Along-Link-Highlighter"
       },
       {
         id: 23,
         title: "speech synthesis",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_23.png",
+        demo: "https://hmothershed.github.io/JavaScript30/23-Speech-Synthesis/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/23-Speech-Synthesis"
       },
       {
         id: 24,
