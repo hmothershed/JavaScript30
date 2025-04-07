@@ -163,9 +163,9 @@ const challenges = [
       {
         id: 24,
         title: "sticky nav",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_24.png",
+        demo: "https://hmothershed.github.io/JavaScript30/24-Sticky-Nav/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/24-Sticky-Nav"
       },
       {
         id: 25,
