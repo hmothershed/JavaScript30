@@ -170,16 +170,16 @@ const challenges = [
       {
         id: 25,
         title: "event propagation",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_25.png",
+        demo: "https://hmothershed.github.io/JavaScript30/25-Event-Propagation/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/25-Event-Propagation"
       },
       {
         id: 26,
         title: "follow along dropdown",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_26.png",
+        demo: "https://hmothershed.github.io/JavaScript30/26-Stripe-Follow-Along-Nav/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/26-Stripe-Follow-Along-Nav"
       },
       {
         id: 27,
