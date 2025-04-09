@@ -191,9 +191,9 @@ const challenges = [
       {
         id: 28,
         title: "speed controller",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_28.png",
+        demo: "https://hmothershed.github.io/JavaScript30/28-Video-Speed-Controller/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/28-Video-Speed-Controller"
       },
       {
         id: 29,
