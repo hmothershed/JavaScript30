@@ -184,9 +184,9 @@ const challenges = [
       {
         id: 27,
         title: "click and drag",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_27.png",
+        demo: "https://hmothershed.github.io/JavaScript30/27-Click-and-Drag/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/27-Click-and-Drag"
       },
       {
         id: 28,
