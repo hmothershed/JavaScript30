@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cherry Bomb One", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+.items {
+  height: 500px;
+  padding: 50px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0;
+  perspective: 500px;
+}
+.items.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.item {
+  width: 250px;
+  height: calc(100% - 40px);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.18);
+  margin-right: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.item:nth-child(9n + 1) { background: #eaeaac; }
+.item:nth-child(9n + 2) { background: #e0e9a5; }
+.item:nth-child(9n + 3) { background: #d6e79f; }
+.item:nth-child(9n + 4) { background: #cae699; }
+.item:nth-child(9n + 5) { background: #bde595; }
+.item:nth-child(9n + 6) { background: #aee492; }
+.item:nth-child(9n + 7) { background: #9ee390; }
+.item:nth-child(9n + 8) { background: #8de290; }
+.item:nth-child(9n + 9) { background: #79e191; }
