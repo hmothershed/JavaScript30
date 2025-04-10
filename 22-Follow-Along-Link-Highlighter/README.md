@@ -1,6 +1,8 @@
 # Challenge #22 - Follow Along Links Highlighter
 
-## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/22-Follow-Along-Link-Highlighter/)
+![FollowAlongLinkHighlighter](https://github.com/user-attachments/assets/0715cd4b-589e-403a-bfb5-3e8cd3339a5f)
+
+# 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/22-Follow-Along-Link-Highlighter/)
 This project creates a dynamic hover effect that highlights links by following the cursor as it moves over them.
 
 ## 🚀 Features
