@@ -1,4 +1,5 @@
 # Challenge #29 - Countdown Timer
+![CountdownTimer](https://github.com/user-attachments/assets/75383899-a700-4f0e-8e82-9c0c32e69113)
 
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/29-Countdown-Timer/)
 This project implements an interactive countdown timer with visual and audio feedback, displaying the remaining time and an estimated completion time.
