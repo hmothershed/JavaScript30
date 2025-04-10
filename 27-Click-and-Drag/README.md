@@ -1,5 +1,7 @@
 # Challenge #27 - Click and Drag to Scroll
 
+![ClickAndDrag](https://github.com/user-attachments/assets/68c4bfce-f759-4754-ba51-b9944d7e402a)
+
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/27-Click-and-Drag/)
 This project enables a draggable scrolling effect for a container using mouse events, allowing users to click and drag to scroll horizontally.
 
