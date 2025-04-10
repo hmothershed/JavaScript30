@@ -1,5 +1,7 @@
 # Challenge #26 - Stripe Follow Along Nav
 
+![StripeFollowAlongNav](https://github.com/user-attachments/assets/76a3c913-190a-4d03-86d2-09751b826213)
+
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/26-Stripe-Follow-Along-Nav/)
 This project enhances navigation menus by implementing smooth dropdown animation that appears when hovering over menu items.
 
