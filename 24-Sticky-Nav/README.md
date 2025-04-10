@@ -1,5 +1,7 @@
 # Challenge #24 - Sticky Nav
 
+![StickyNav](https://github.com/user-attachments/assets/b3454042-0db5-429e-b6cf-bb4ed89536f6)
+
 ## 📸 Demo [HERE](https://hmothershed.github.io/JavaScript30/24-Sticky-Nav/)
 This project enhances user experience by implementing a sticky navigation bar that remains fixed at the top of the page upon scrolling and adds a smooth scroll-based animation effect for imagaes.
 
