@@ -198,9 +198,9 @@ const challenges = [
       {
         id: 29,
         title: "countdown timer",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_29.png",
+        demo: "https://hmothershed.github.io/JavaScript30/29-Countdown-Timer/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/29-Countdown-Timer"
       },
       {
         id: 30,
