@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Barrio&display=swap');
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Azeret Mono', sans-serif;
+  background: #fff9e2;
+  text-align: center;
+}
+
+.top-container{
+  margin: 0 auto;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Barrio';
+  font-size: 4.5rem;
+  letter-spacing: 0.5rem;
+  line-height: 1;
+  margin: 2rem 0 0 0;
+  color: #ff7660;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #3b1010;
+  margin: 2rem;
+}
+
+.score-count {
+  background: #ffe5cf;
+  padding: 0 3rem;
+  line-height: 1;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  color: #3b1010;
+}
+
+.time-left {
+  margin: 0;
+  padding: 0.8rem 2rem;
+  border: 1px solid #3b1010;
+  border-radius: 5rem;
+  font-size: 3rem;
+}
+
+.game {
+  width: 600px;
+  height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url('dirt.svg') bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+.mole {
+  background: url('mole.svg') bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  cursor: pointer
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+#start {
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  background: #3b1010;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+#start:hover {
+  opacity: 0.8;
+}
+
