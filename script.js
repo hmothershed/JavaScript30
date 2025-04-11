@@ -205,9 +205,9 @@ const challenges = [
       {
         id: 30,
         title: "whack a mole",
-        image: "./assets/in_progress.png",
-        demo: "",
-        repo: ""
+        image: "./assets/image_30.png",
+        demo: "https://hmothershed.github.io/JavaScript30/30-Whack-a-Mole/",
+        repo: "https://github.com/hmothershed/JavaScript30/tree/main/30-Whack-a-Mole"
       }
   ];
   
